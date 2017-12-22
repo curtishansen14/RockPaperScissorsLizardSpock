@@ -1,0 +1,1 @@
+C:\Users\User\Desktop\LearnCsharp\RockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\RockPaperScissorsLizardSpock.exe.config
