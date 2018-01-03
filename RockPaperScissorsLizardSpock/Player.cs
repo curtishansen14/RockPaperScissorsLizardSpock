@@ -13,14 +13,16 @@ namespace RockPaperScissorsLizardSpock
         public int score;
         public int roundsWons;
         public bool didWin;
+        public int champion;
 
 
         //constructor
         public Player()
         {
-
+            
         }
 
         //member methods 
+
     }
 }

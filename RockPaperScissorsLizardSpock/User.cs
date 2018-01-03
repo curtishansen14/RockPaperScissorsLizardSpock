@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissorsLizardSpock
 {
-    class User
+    class User : Player
     {
         //member variables
-        public string name;
-        public string score;
-        public string champion;
-        public Player playerOne;
-        public Player playerTwo;
+        public int ChampionNumber;
+        public string ChampionName;
 
 
         //constructor
@@ -25,8 +22,40 @@ namespace RockPaperScissorsLizardSpock
         //member methods
          public string getPlayerChampion()
         {
-            Text.askForChampion();
-            champion = Console.ReadLine();
+            Text.askForChampionName();
+            ChampionName= Console.ReadLine();
+            return ChampionName;
+        }
+        public int getChampion()
+        {
+            switch (getPlayerChampion())
+            {
+                case "0":
+                    ChampionNumber = 0;
+                    return ChampionNumber;
+                case "1":
+                    ChampionNumber = 1;
+                    return ChampionNumber;
+                case "2":
+                    ChampionNumber = 2;
+                    return ChampionNumber;
+                case "3":
+                    ChampionNumber = 3;
+                    return ChampionNumber;
+                case "4":
+                    ChampionNumber = 4;
+                    return ChampionNumber;
+                default:
+                    Text.PleaseTryAgain();
+                    Text.askForChampionName();
+                    return getChampion();
+                    
+
+            }
+        }
+        public int setChampion()
+        {
+            champion = ChampionNumber;
             return champion;
         }
     }

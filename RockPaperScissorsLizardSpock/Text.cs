@@ -59,7 +59,7 @@ namespace RockPaperScissorsLizardSpock
             Console.WriteLine("Please enter your name");
         }
 
-        public static void askForChampion()
+        public static void askForChampionName()
         {
             Console.WriteLine("Select Champion");
             Console.WriteLine("0 for Rock" );
@@ -69,10 +69,24 @@ namespace RockPaperScissorsLizardSpock
             Console.WriteLine("4 for Spock");
         }
 
-        public static void pleaseTryAgain()
+        public static void playerVsPlayerIntro()
         {
-            Console.WriteLine("Please try again. Enter 1 or 2 for number of human users");
+            Console.WriteLine("You have chosen Human vs Human.");
         }
+
+        public static void playerVsComputer()
+        {
+            Console.WriteLine("You have choosen Human vs computer");
+        }
+//Error Messages 
+
+        public static void PleaseTryAgain()
+        {
+            Console.WriteLine("Please try again.");
+        }
+
+
+//Delcaration of Winning Champions  
         public static void ScissorsCutsPaper()
         {
             Console.WriteLine("Scissors Cuts Paper");
